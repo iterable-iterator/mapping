@@ -1,4 +1,4 @@
-[js-collections](http://aureooms.github.io/js-collections)
+[js-mapping](http://aureooms.github.io/js-mapping)
 ==
 
 Collections library for JavaScript. Parent is
@@ -21,16 +21,16 @@ let {
 } = collections ;
 ```
 
-[![NPM license](http://img.shields.io/npm/l/aureooms-js-collections.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-collections/master/LICENSE)
-[![NPM version](http://img.shields.io/npm/v/aureooms-js-collections.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-collections)
-[![Build Status](http://img.shields.io/travis/aureooms/js-collections.svg?style=flat)](https://travis-ci.org/aureooms/js-collections)
-[![Coverage Status](http://img.shields.io/coveralls/aureooms/js-collections.svg?style=flat)](https://coveralls.io/r/aureooms/js-collections)
-[![Dependencies Status](http://img.shields.io/david/aureooms/js-collections.svg?style=flat)](https://david-dm.org/aureooms/js-collections#info=dependencies)
-[![devDependencies Status](http://img.shields.io/david/dev/aureooms/js-collections.svg?style=flat)](https://david-dm.org/aureooms/js-collections#info=devDependencies)
-[![Code Climate](http://img.shields.io/codeclimate/github/aureooms/js-collections.svg?style=flat)](https://codeclimate.com/github/aureooms/js-collections)
-[![NPM downloads per month](http://img.shields.io/npm/dm/aureooms-js-collections.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-collections)
-[![GitHub issues](http://img.shields.io/github/issues/aureooms/js-collections.svg?style=flat)](https://github.com/aureooms/js-collections/issues)
-[![Documentation](https://aureooms.github.io/js-collections/badge.svg)](https://aureooms.github.io/js-collections/source.html)
+[![NPM license](http://img.shields.io/npm/l/aureooms-js-mapping.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-mapping/master/LICENSE)
+[![NPM version](http://img.shields.io/npm/v/aureooms-js-mapping.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-mapping)
+[![Build Status](http://img.shields.io/travis/aureooms/js-mapping.svg?style=flat)](https://travis-ci.org/aureooms/js-mapping)
+[![Coverage Status](http://img.shields.io/coveralls/aureooms/js-mapping.svg?style=flat)](https://coveralls.io/r/aureooms/js-mapping)
+[![Dependencies Status](http://img.shields.io/david/aureooms/js-mapping.svg?style=flat)](https://david-dm.org/aureooms/js-mapping#info=dependencies)
+[![devDependencies Status](http://img.shields.io/david/dev/aureooms/js-mapping.svg?style=flat)](https://david-dm.org/aureooms/js-mapping#info=devDependencies)
+[![Code Climate](http://img.shields.io/codeclimate/github/aureooms/js-mapping.svg?style=flat)](https://codeclimate.com/github/aureooms/js-mapping)
+[![NPM downloads per month](http://img.shields.io/npm/dm/aureooms-js-mapping.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-mapping)
+[![GitHub issues](http://img.shields.io/github/issues/aureooms/js-mapping.svg?style=flat)](https://github.com/aureooms/js-mapping/issues)
+[![Documentation](https://aureooms.github.io/js-mapping/badge.svg)](https://aureooms.github.io/js-mapping/source.html)
 
 ### Some changes w.r.t. Python's API
 
