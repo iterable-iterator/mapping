@@ -8,7 +8,7 @@ import 'babel-polyfill' ;
 
 Then
 ```js
-const number = require( 'aureooms-js-mapping' ) ;
+const number = require( '@aureooms/js-mapping' ) ;
 // or
-import number from 'aureooms-js-mapping' ;
+import number from '@aureooms/js-mapping' ;
 ```

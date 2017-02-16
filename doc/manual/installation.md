@@ -4,10 +4,10 @@ or [npm](https://github.com/npm/npm).
 
 ### jspm
 ```terminal
-jspm install npm:aureooms-js-mapping
+jspm install npm:@aureooms/js-mapping
 ```
 
 ### npm
 ```terminal
-npm install aureooms-js-mapping --save
+npm install @aureooms/js-mapping --save
 ```
