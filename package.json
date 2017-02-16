@@ -1,5 +1,5 @@
 {
-  "name": "aureooms-js-mapping",
+  "name": "@aureooms/js-mapping",
   "description": "Mapping library for JavaScript",
   "version": "3.0.0",
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
