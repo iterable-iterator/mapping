@@ -1,11 +1,19 @@
-[js-mapping](http://aureooms.github.io/js-mapping)
+[@aureooms/js-mapping](https://aureooms.github.io/js-mapping)
 ==
 
-Mapping library for JavaScript. Parent is
-[js-library](https://github.com/aureooms/js-library).
+Mapping library for JavaScript.
+See [docs](https://aureooms.github.io/js-mapping).
+Parent is [@aureooms/js-library](https://github.com/aureooms/js-library).
 
 ```js
-mapping.fromkeys( 'ab' , 1 ) ; // [['a', 1], ['b', 1]]
+> import { fromkeys , reflect , object } from '@aureooms/js-mapping' ;
+> import { enumerate } from '@aureooms/js-itertools' ;
+> fromkeys( 'ab' , 1 )
+[['a', 1], ['b', 1]]
+> reflect(enumerate('ab'))
+[['a', 0], ['b', 1]]
+> object(reflect(enumerate('ab')))
+{ 'a': 0, 'b': 1 }
 ```
 
 [![License](https://img.shields.io/github/license/aureooms/js-mapping.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-mapping/master/LICENSE)
