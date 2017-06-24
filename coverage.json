@@ -1,9 +1,23 @@
 {
   "coverage": "0%",
-  "expectCount": 1,
+  "expectCount": 3,
   "actualCount": 0,
   "files": {
     "src/fromkeys.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/object.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "src/reflect.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [

@@ -35,30 +35,40 @@
   <ul>
     
   <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fromkeys">fromkeys</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-object">object</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-reflect">reflect</a></span></span></li>
 </ul>
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-js-mapping-http-aureooms-github-io-js-mapping-"><a href="http://aureooms.github.io/js-mapping">js-mapping</a></h1>
-<p>Mapping library for JavaScript. Parent is
-<a href="https://github.com/aureooms/js-library">js-library</a>.</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">mapping.fromkeys( &apos;ab&apos; , 1 ) ; // [[&apos;a&apos;, 1], [&apos;b&apos;, 1]]</code>
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-aureooms-js-mapping-https-aureooms-github-io-js-mapping-"><a href="https://aureooms.github.io/js-mapping">@aureooms/js-mapping</a></h1>
+<p>Mapping library for JavaScript.
+See <a href="https://aureooms.github.io/js-mapping">docs</a>.
+Parent is <a href="https://github.com/aureooms/js-library">@aureooms/js-library</a>.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">&gt; import { fromkeys , reflect , object } from &apos;@aureooms/js-mapping&apos; ;
+&gt; import { enumerate } from &apos;@aureooms/js-itertools&apos; ;
+&gt; fromkeys( &apos;ab&apos; , 1 )
+[[&apos;a&apos;, 1], [&apos;b&apos;, 1]]
+&gt; reflect(enumerate(&apos;ab&apos;))
+[[&apos;a&apos;, 0], [&apos;b&apos;, 1]]
+&gt; object(reflect(enumerate(&apos;ab&apos;)))
+{ &apos;a&apos;: 0, &apos;b&apos;: 1 }</code>
 </code></pre>
-<p><a href="https://raw.githubusercontent.com/aureooms/js-mapping/master/LICENSE"><img src="http://img.shields.io/npm/l/aureooms-js-mapping.svg?style=flat" alt="NPM license"></a>
-<a href="https://www.npmjs.org/package/aureooms-js-mapping"><img src="http://img.shields.io/npm/v/aureooms-js-mapping.svg?style=flat" alt="NPM version"></a>
-<a href="https://travis-ci.org/aureooms/js-mapping"><img src="http://img.shields.io/travis/aureooms/js-mapping.svg?style=flat" alt="Build Status"></a>
-<a href="https://coveralls.io/r/aureooms/js-mapping"><img src="http://img.shields.io/coveralls/aureooms/js-mapping.svg?style=flat" alt="Coverage Status"></a>
-<a href="https://david-dm.org/aureooms/js-mapping#info=dependencies"><img src="http://img.shields.io/david/aureooms/js-mapping.svg?style=flat" alt="Dependencies Status"></a>
-<a href="https://david-dm.org/aureooms/js-mapping#info=devDependencies"><img src="http://img.shields.io/david/dev/aureooms/js-mapping.svg?style=flat" alt="devDependencies Status"></a>
-<a href="https://codeclimate.com/github/aureooms/js-mapping"><img src="http://img.shields.io/codeclimate/github/aureooms/js-mapping.svg?style=flat" alt="Code Climate"></a>
-<a href="https://www.npmjs.org/package/aureooms-js-mapping"><img src="http://img.shields.io/npm/dm/aureooms-js-mapping.svg?style=flat" alt="NPM downloads per month"></a>
-<a href="https://github.com/aureooms/js-mapping/issues"><img src="http://img.shields.io/github/issues/aureooms/js-mapping.svg?style=flat" alt="GitHub issues"></a>
+<p><a href="https://raw.githubusercontent.com/aureooms/js-mapping/master/LICENSE"><img src="https://img.shields.io/github/license/aureooms/js-mapping.svg?style=flat" alt="License"></a>
+<a href="https://www.npmjs.org/package/@aureooms/js-mapping"><img src="https://img.shields.io/npm/v/@aureooms/js-mapping.svg?style=flat" alt="NPM version"></a>
+<a href="https://travis-ci.org/aureooms/js-mapping"><img src="https://img.shields.io/travis/aureooms/js-mapping.svg?style=flat" alt="Build Status"></a>
+<a href="https://coveralls.io/r/aureooms/js-mapping"><img src="https://img.shields.io/coveralls/aureooms/js-mapping.svg?style=flat" alt="Coverage Status"></a>
+<a href="https://david-dm.org/aureooms/js-mapping#info=dependencies"><img src="https://img.shields.io/david/aureooms/js-mapping.svg?style=flat" alt="Dependencies Status"></a>
+<a href="https://david-dm.org/aureooms/js-mapping#info=devDependencies"><img src="https://img.shields.io/david/dev/aureooms/js-mapping.svg?style=flat" alt="devDependencies Status"></a>
+<a href="https://codeclimate.com/github/aureooms/js-mapping"><img src="https://img.shields.io/codeclimate/github/aureooms/js-mapping.svg?style=flat" alt="Code Climate"></a>
+<a href="https://www.npmjs.org/package/@aureooms/js-mapping"><img src="https://img.shields.io/npm/dm/@aureooms/js-mapping.svg?style=flat" alt="NPM downloads per month"></a>
+<a href="https://github.com/aureooms/js-mapping/issues"><img src="https://img.shields.io/github/issues/aureooms/js-mapping.svg?style=flat" alt="GitHub issues"></a>
 <a href="https://aureooms.github.io/js-mapping/source.html"><img src="https://aureooms.github.io/js-mapping/badge.svg" alt="Documentation"></a></p>
 </div>
 </div>
 
 <footer class="footer">
-  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.4.8)</span></a>
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.5.2)</span><img src="./image/esdoc-logo-mini-black.png"></a>
 </footer>
 
 <script src="script/search_index.js"></script>
