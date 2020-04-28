@@ -16,13 +16,17 @@ Parent is [@aureooms/js-library](https://github.com/aureooms/js-library).
 { 'a': 0, 'b': 1 }
 ```
 
-[![License](https://img.shields.io/github/license/aureooms/js-mapping.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-mapping/master/LICENSE)
-[![NPM version](https://img.shields.io/npm/v/@aureooms/js-mapping.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-mapping)
-[![Build Status](https://img.shields.io/travis/aureooms/js-mapping.svg?style=flat)](https://travis-ci.org/aureooms/js-mapping)
-[![Coverage Status](https://img.shields.io/coveralls/aureooms/js-mapping.svg?style=flat)](https://coveralls.io/r/aureooms/js-mapping)
-[![Dependencies Status](https://img.shields.io/david/aureooms/js-mapping.svg?style=flat)](https://david-dm.org/aureooms/js-mapping#info=dependencies)
-[![devDependencies Status](https://img.shields.io/david/dev/aureooms/js-mapping.svg?style=flat)](https://david-dm.org/aureooms/js-mapping#info=devDependencies)
-[![Code Climate](https://img.shields.io/codeclimate/github/aureooms/js-mapping.svg?style=flat)](https://codeclimate.com/github/aureooms/js-mapping)
-[![NPM downloads per month](https://img.shields.io/npm/dm/@aureooms/js-mapping.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-mapping)
-[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-mapping.svg?style=flat)](https://github.com/aureooms/js-mapping/issues)
+[![License](https://img.shields.io/github/license/aureooms/js-mapping.svg)](https://raw.githubusercontent.com/aureooms/js-mapping/master/LICENSE)
+[![Version](https://img.shields.io/npm/v/@aureooms/js-mapping.svg)](https://www.npmjs.org/package/@aureooms/js-mapping)
+[![Build](https://img.shields.io/travis/aureooms/js-mapping/master.svg)](https://travis-ci.org/aureooms/js-mapping/branches)
+[![Dependencies](https://img.shields.io/david/aureooms/js-mapping.svg)](https://david-dm.org/aureooms/js-mapping)
+[![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-mapping.svg)](https://david-dm.org/aureooms/js-mapping?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-mapping.svg)](https://github.com/aureooms/js-mapping/issues)
+[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-mapping.svg)](https://www.npmjs.org/package/@aureooms/js-mapping)
+
+[![Code issues](https://img.shields.io/codeclimate/issues/aureooms/js-mapping.svg)](https://codeclimate.com/github/aureooms/js-mapping/issues)
+[![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-mapping.svg)](https://codeclimate.com/github/aureooms/js-mapping/trends/churn)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-mapping/master.svg)](https://codecov.io/gh/aureooms/js-mapping)
+[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-mapping.svg)](https://codeclimate.com/github/aureooms/js-mapping/trends/technical_debt)
 [![Documentation](https://aureooms.github.io/js-mapping/badge.svg)](https://aureooms.github.io/js-mapping/source.html)
+[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-mapping)](https://bundlephobia.com/result?p=@aureooms/js-mapping)
