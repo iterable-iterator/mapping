@@ -9,8 +9,4 @@ export default {
 	reflect,
 };
 
-export {
-	fromkeys,
-	object,
-	reflect,
-};
+export {fromkeys, object, reflect};

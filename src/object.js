@@ -1,9 +1,7 @@
-export default function object ( mapping ) {
+export default function object(mapping) {
+	const object_ = {};
 
-	const obj = {} ;
+	for (const [key, value] of mapping) object_[key] = value;
 
-	for ( const [ key , value ] of mapping ) obj[key] = value ;
-
-	return obj ;
-
+	return object_;
 }

@@ -1,6 +1,3 @@
-
-export default function* fromkeys ( seq , value ) {
-
-	for ( let key of seq ) yield [ key , value ] ;
-
+export default function* fromkeys(seq, value) {
+	for (const key of seq) yield [key, value];
 }
