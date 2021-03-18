@@ -135,7 +135,6 @@
         ]
       },
       "development": {
-        "sourceMaps": "inline",
         "presets": [
           "babel-preset-power-assert"
         ],
@@ -167,6 +166,7 @@
           ]
         ]
       }
-    }
+    },
+    "sourceMaps": true
   }
 }
