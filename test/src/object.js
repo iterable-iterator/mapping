@@ -1,8 +1,8 @@
 import test from 'ava' ;
 
-import mapping from '../../src' ;
+import mapping from "../../src/index.js" ;
 
-import { object } from '../../src' ;
+import { object } from "../../src/index.js" ;
 
 test( 'object'  , t => {
 
