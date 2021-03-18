@@ -1,15 +1,16 @@
-import fromkeys from './fromkeys' ;
-import object from './object' ;
-import reflect from './reflect' ;
+import fromkeys from './fromkeys.js';
+import object from './object.js';
+import reflect from './reflect.js';
 
+/* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 export default {
-	fromkeys ,
-	object ,
-	reflect ,
-} ;
+	fromkeys,
+	object,
+	reflect,
+};
 
 export {
-	fromkeys ,
-	object ,
-	reflect ,
-} ;
+	fromkeys,
+	object,
+	reflect,
+};
