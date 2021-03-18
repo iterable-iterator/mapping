@@ -7,7 +7,7 @@
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        2
+        1
       ]
     },
     "src/object.js": {
@@ -21,7 +21,7 @@
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        2
+        1
       ]
     }
   }
