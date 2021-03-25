@@ -1,10 +1,8 @@
 import test from 'ava';
 
-import mapping, {fromkeys} from '../../src/index.js';
+import {fromkeys} from '../../src/index.js';
 
 test('fromkeys', (t) => {
-	t.is(fromkeys, mapping.fromkeys, 'exports are working');
-
 	t.deepEqual([...fromkeys('', 1)], []);
 
 	t.deepEqual(

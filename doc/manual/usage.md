@@ -12,5 +12,5 @@ Then
 ```js
 const mapping = require( '@aureooms/js-mapping' ) ;
 // or
-import mapping from '@aureooms/js-mapping' ;
+import * as mapping from '@aureooms/js-mapping' ;
 ```

@@ -1,10 +1,8 @@
 import test from 'ava';
 
-import mapping, {object} from '../../src/index.js';
+import {object} from '../../src/index.js';
 
 test('object', (t) => {
-	t.is(object, mapping.object, 'exports are working');
-
 	t.deepEqual(object([]), {});
 
 	t.deepEqual(

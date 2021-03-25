@@ -2,11 +2,9 @@ import test from 'ava';
 
 import {enumerate} from '@aureooms/js-itertools';
 
-import mapping, {reflect} from '../../src/index.js';
+import {reflect} from '../../src/index.js';
 
 test('reflect', (t) => {
-	t.is(reflect, mapping.reflect, 'exports are working');
-
 	t.deepEqual([...reflect(enumerate(''))], []);
 
 	t.deepEqual(
