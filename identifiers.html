@@ -29,9 +29,9 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fromkeys">fromkeys</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-object">object</a></span></span></li>
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fromKeys">fromKeys</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-reflect">reflect</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-toObject">toObject</a></span></span></li>
 </ul>
 </div>
 </nav>
@@ -61,41 +61,14 @@
           <span data-ice="kind-icon" class="kind-function">F</span>
           
           <span data-ice="generator">*</span>
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-fromkeys">fromkeys</a></span></span><span class="code" data-ice="signature">(seq: <span>*</span>, value: <span>*</span>)</span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-fromKeys">fromKeys</a></span></span><span class="code" data-ice="signature">(keys: <span>Iterable</span>, value: <span>any</span>): <span>IterableIterator</span></span>
         </p>
       </div>
       <div>
         
         
-        
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          <span data-ice="kind-icon" class="kind-function">F</span>
-          
-          
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-object">object</a></span></span><span class="code" data-ice="signature">(mapping: <span>*</span>): <span>*</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        
+        <div data-ice="description"><p>Creates a mapping from a sequences of keys and a single value.</p>
+</div>
       </div>
     </td>
     <td>
@@ -117,13 +90,43 @@
           <span data-ice="kind-icon" class="kind-function">F</span>
           
           <span data-ice="generator">*</span>
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-reflect">reflect</a></span></span><span class="code" data-ice="signature">(mapping: <span>*</span>)</span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-reflect">reflect</a></span></span><span class="code" data-ice="signature">(mapping: <span>Iterable</span>): <span>IterableIterator</span></span>
         </p>
       </div>
       <div>
         
         
+        <div data-ice="description"><p>Swap keys and values of a mapping.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-function">F</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-toObject">toObject</a></span></span><span class="code" data-ice="signature">(mapping: <span>Iterable</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
+        </p>
+      </div>
+      <div>
+        <div class="deprecated" data-ice="deprecated">this function was deprecated. Use Object.fromEntries(mapping) directly.</div>
         
+        <div data-ice="description"><p>Instantiate an object from a mapping.</p>
+</div>
       </div>
     </td>
     <td>

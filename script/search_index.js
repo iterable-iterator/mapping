@@ -1,20 +1,20 @@
 window.esdocSearchIndex = [
   [
     "@aureooms/js-mapping/src/fromkeys.js~fromkeys",
-    "function/index.html#static-function-fromkeys",
-    "<span>fromkeys</span> <span class=\"search-result-import-path\">@aureooms/js-mapping/src/fromkeys.js</span>",
-    "function"
-  ],
-  [
-    "@aureooms/js-mapping/src/object.js~object",
-    "function/index.html#static-function-object",
-    "<span>object</span> <span class=\"search-result-import-path\">@aureooms/js-mapping/src/object.js</span>",
+    "function/index.html#static-function-fromKeys",
+    "<span>fromKeys</span> <span class=\"search-result-import-path\">@aureooms/js-mapping/src/fromKeys.js</span>",
     "function"
   ],
   [
     "@aureooms/js-mapping/src/reflect.js~reflect",
     "function/index.html#static-function-reflect",
     "<span>reflect</span> <span class=\"search-result-import-path\">@aureooms/js-mapping/src/reflect.js</span>",
+    "function"
+  ],
+  [
+    "@aureooms/js-mapping/src/toobject.js~toobject",
+    "function/index.html#static-function-toObject",
+    "<span>toObject</span> <span class=\"search-result-import-path\">@aureooms/js-mapping/src/toObject.js</span>",
     "function"
   ],
   [
@@ -301,8 +301,8 @@ window.esdocSearchIndex = [
   ],
   [
     "src/fromkeys.js",
-    "file/src/fromkeys.js.html",
-    "src/fromkeys.js",
+    "file/src/fromKeys.js.html",
+    "src/fromKeys.js",
     "file"
   ],
   [
@@ -312,15 +312,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/object.js",
-    "file/src/object.js.html",
-    "src/object.js",
-    "file"
-  ],
-  [
     "src/reflect.js",
     "file/src/reflect.js.html",
     "src/reflect.js",
+    "file"
+  ],
+  [
+    "src/toobject.js",
+    "file/src/toObject.js.html",
+    "src/toObject.js",
     "file"
   ]
 ]

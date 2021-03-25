@@ -1,28 +1,22 @@
 {
-  "coverage": "0%",
+  "coverage": "100%",
   "expectCount": 3,
-  "actualCount": 0,
+  "actualCount": 3,
   "files": {
-    "src/fromkeys.js": {
+    "src/fromKeys.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        1
-      ]
-    },
-    "src/object.js": {
-      "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        1
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/reflect.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        1
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/toObject.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
     }
   }
 }
