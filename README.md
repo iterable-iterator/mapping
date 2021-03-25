@@ -6,13 +6,13 @@ See [docs](https://aureooms.github.io/js-mapping).
 Parent is [@aureooms/js-library](https://github.com/aureooms/js-library).
 
 ```js
-> import { fromkeys , reflect , object } from '@aureooms/js-mapping' ;
+> import { fromKeys , reflect } from '@aureooms/js-mapping' ;
 > import { enumerate } from '@aureooms/js-itertools' ;
-> fromkeys( 'ab' , 1 )
+> fromKeys( 'ab' , 1 )
 [['a', 1], ['b', 1]]
 > reflect(enumerate('ab'))
 [['a', 0], ['b', 1]]
-> object(reflect(enumerate('ab')))
+> Object.fromEntries(reflect(enumerate('ab')))
 { 'a': 0, 'b': 1 }
 ```
 
