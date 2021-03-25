@@ -1,4 +1,4 @@
-[@aureooms/js-mapping](https://aureooms.github.io/js-mapping)
+:phone: [@aureooms/js-mapping](https://aureooms.github.io/js-mapping)
 ==
 
 Mapping library for JavaScript.
