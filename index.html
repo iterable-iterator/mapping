@@ -39,13 +39,13 @@
 <div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-phone---a-href--https---aureooms-github-io-js-mapping---aureooms-js-mapping--a-">:phone: <a href="https://aureooms.github.io/js-mapping">@aureooms/js-mapping</a></h1><p>Mapping library for JavaScript.
 See <a href="https://aureooms.github.io/js-mapping">docs</a>.
 Parent is <a href="https://github.com/aureooms/js-library">@aureooms/js-library</a>.</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">&gt; import { fromkeys , reflect , object } from &apos;@aureooms/js-mapping&apos; ;
+<pre><code class="lang-js"><code class="source-code prettyprint">&gt; import { fromKeys , reflect } from &apos;@aureooms/js-mapping&apos; ;
 &gt; import { enumerate } from &apos;@aureooms/js-itertools&apos; ;
-&gt; fromkeys( &apos;ab&apos; , 1 )
+&gt; fromKeys( &apos;ab&apos; , 1 )
 [[&apos;a&apos;, 1], [&apos;b&apos;, 1]]
 &gt; reflect(enumerate(&apos;ab&apos;))
 [[&apos;a&apos;, 0], [&apos;b&apos;, 1]]
-&gt; object(reflect(enumerate(&apos;ab&apos;)))
+&gt; Object.fromEntries(reflect(enumerate(&apos;ab&apos;)))
 { &apos;a&apos;: 0, &apos;b&apos;: 1 }</code>
 </code></pre>
 <p><a href="https://raw.githubusercontent.com/aureooms/js-mapping/master/LICENSE"><img src="https://img.shields.io/github/license/aureooms/js-mapping.svg" alt="License"></a>
