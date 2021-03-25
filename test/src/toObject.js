@@ -1,12 +1,12 @@
 import test from 'ava';
 
-import {object} from '../../src/index.js';
+import {toObject} from '../../src/index.js';
 
-test('object', (t) => {
-	t.deepEqual(object([]), {});
+test('toObject', (t) => {
+	t.deepEqual(toObject([]), {});
 
 	t.deepEqual(
-		object([
+		toObject([
 			['a', 0],
 			['b', 1],
 			['c', 2],

@@ -1,3 +1,3 @@
-export {default as fromkeys} from './fromkeys.js';
-export {default as object} from './object.js';
+export {default as fromKeys} from './fromKeys.js';
 export {default as reflect} from './reflect.js';
+export {default as toObject} from './toObject.js';
