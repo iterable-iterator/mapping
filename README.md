@@ -18,7 +18,7 @@ Parent is [@aureooms/js-library](https://github.com/aureooms/js-library).
 
 [![License](https://img.shields.io/github/license/aureooms/js-mapping.svg)](https://raw.githubusercontent.com/aureooms/js-mapping/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@aureooms/js-mapping.svg)](https://www.npmjs.org/package/@aureooms/js-mapping)
-[![Build](https://img.shields.io/travis/aureooms/js-mapping/main.svg)](https://travis-ci.com/aureooms/js-mapping/branches)
+[![Tests](https://img.shields.io/github/workflow/status/aureooms/js-mapping/ci:test?event=push&label=tests)](https://github.com/aureooms/js-mapping/actions/workflows/ci:test.yml?query=branch:main)
 [![Dependencies](https://img.shields.io/david/aureooms/js-mapping.svg)](https://david-dm.org/aureooms/js-mapping)
 [![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-mapping.svg)](https://david-dm.org/aureooms/js-mapping?type=dev)
 [![GitHub issues](https://img.shields.io/github/issues/aureooms/js-mapping.svg)](https://github.com/aureooms/js-mapping/issues)
