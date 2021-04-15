@@ -142,6 +142,7 @@
           ]
         ]
       },
+      "cover": {},
       "development": {
         "presets": [
           "babel-preset-power-assert"
