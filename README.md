@@ -1,8 +1,8 @@
-:phone: [@aureooms/js-mapping](https://aureooms.github.io/js-mapping)
+:phone: [@aureooms/js-mapping](https://make-github-pseudonymous-again.github.io/js-mapping)
 ==
 
 Mapping library for JavaScript.
-See [docs](https://aureooms.github.io/js-mapping).
+See [docs](https://make-github-pseudonymous-again.github.io/js-mapping).
 Parent is [@aureooms/js-library](https://github.com/aureooms/js-library).
 
 ```js
@@ -28,5 +28,5 @@ Parent is [@aureooms/js-library](https://github.com/aureooms/js-library).
 [![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-mapping.svg)](https://codeclimate.com/github/aureooms/js-mapping/trends/churn)
 [![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-mapping/main.svg)](https://codecov.io/gh/aureooms/js-mapping)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-mapping.svg)](https://codeclimate.com/github/aureooms/js-mapping/trends/technical_debt)
-[![Documentation](https://aureooms.github.io/js-mapping/badge.svg)](https://aureooms.github.io/js-mapping/source.html)
+[![Documentation](https://make-github-pseudonymous-again.github.io/js-mapping/badge.svg)](https://make-github-pseudonymous-again.github.io/js-mapping/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-mapping)](https://bundlephobia.com/result?p=@aureooms/js-mapping)
