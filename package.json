@@ -6,11 +6,11 @@
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
   "homepage": "https://make-github-pseudonymous-again.github.io/js-mapping",
   "repository": {
-    "url": "https://github.com/aureooms/js-mapping",
+    "url": "https://github.com/make-github-pseudonymous-again/js-mapping",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/aureooms/js-mapping/issues"
+    "url": "https://github.com/make-github-pseudonymous-again/js-mapping/issues"
   },
   "keywords": [
     "javascript",
