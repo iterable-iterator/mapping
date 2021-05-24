@@ -10,7 +10,7 @@ import 'regenerator-runtime/runtime.js' ;
 
 Then
 ```js
-const mapping = require( '@aureooms/js-mapping' ) ;
+const mapping = require( '@iterable-iterator/mapping' ) ;
 // or
-import * as mapping from '@aureooms/js-mapping' ;
+import * as mapping from '@iterable-iterator/mapping' ;
 ```

@@ -1,12 +1,12 @@
-:phone: [@aureooms/js-mapping](https://make-github-pseudonymous-again.github.io/js-mapping)
+:phone: [@iterable-iterator/mapping](https://iterable-iterator.github.io/mapping)
 ==
 
 Mapping library for JavaScript.
-See [docs](https://make-github-pseudonymous-again.github.io/js-mapping).
-Parent is [@aureooms/js-library](https://github.com/make-github-pseudonymous-again/js-library).
+See [docs](https://iterable-iterator.github.io/mapping).
+Parent is [js-library](https://github.com/make-github-pseudonymous-again/js-library).
 
 ```js
-> import { fromKeys , reflect } from '@aureooms/js-mapping' ;
+> import { fromKeys , reflect } from '@iterable-iterator/mapping' ;
 > import { enumerate } from '@aureooms/js-itertools' ;
 > fromKeys( 'ab' , 1 )
 [['a', 1], ['b', 1]]
@@ -16,17 +16,17 @@ Parent is [@aureooms/js-library](https://github.com/make-github-pseudonymous-aga
 { 'a': 0, 'b': 1 }
 ```
 
-[![License](https://img.shields.io/github/license/make-github-pseudonymous-again/js-mapping.svg)](https://raw.githubusercontent.com/make-github-pseudonymous-again/js-mapping/main/LICENSE)
-[![Version](https://img.shields.io/npm/v/@aureooms/js-mapping.svg)](https://www.npmjs.org/package/@aureooms/js-mapping)
-[![Tests](https://img.shields.io/github/workflow/status/make-github-pseudonymous-again/js-mapping/ci:test?event=push&label=tests)](https://github.com/make-github-pseudonymous-again/js-mapping/actions/workflows/ci:test.yml?query=branch:main)
-[![Dependencies](https://img.shields.io/david/make-github-pseudonymous-again/js-mapping.svg)](https://david-dm.org/make-github-pseudonymous-again/js-mapping)
-[![Dev dependencies](https://img.shields.io/david/dev/make-github-pseudonymous-again/js-mapping.svg)](https://david-dm.org/make-github-pseudonymous-again/js-mapping?type=dev)
-[![GitHub issues](https://img.shields.io/github/issues/make-github-pseudonymous-again/js-mapping.svg)](https://github.com/make-github-pseudonymous-again/js-mapping/issues)
-[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-mapping.svg)](https://www.npmjs.org/package/@aureooms/js-mapping)
+[![License](https://img.shields.io/github/license/iterable-iterator/mapping.svg)](https://raw.githubusercontent.com/iterable-iterator/mapping/main/LICENSE)
+[![Version](https://img.shields.io/npm/v/@iterable-iterator/mapping.svg)](https://www.npmjs.org/package/@iterable-iterator/mapping)
+[![Tests](https://img.shields.io/github/workflow/status/iterable-iterator/mapping/ci:test?event=push&label=tests)](https://github.com/iterable-iterator/mapping/actions/workflows/ci:test.yml?query=branch:main)
+[![Dependencies](https://img.shields.io/david/iterable-iterator/mapping.svg)](https://david-dm.org/iterable-iterator/mapping)
+[![Dev dependencies](https://img.shields.io/david/dev/iterable-iterator/mapping.svg)](https://david-dm.org/iterable-iterator/mapping?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/iterable-iterator/mapping.svg)](https://github.com/iterable-iterator/mapping/issues)
+[![Downloads](https://img.shields.io/npm/dm/@iterable-iterator/mapping.svg)](https://www.npmjs.org/package/@iterable-iterator/mapping)
 
-[![Code issues](https://img.shields.io/codeclimate/issues/make-github-pseudonymous-again/js-mapping.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-mapping/issues)
-[![Code maintainability](https://img.shields.io/codeclimate/maintainability/make-github-pseudonymous-again/js-mapping.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-mapping/trends/churn)
-[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/make-github-pseudonymous-again/js-mapping/main.svg)](https://codecov.io/gh/make-github-pseudonymous-again/js-mapping)
-[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/make-github-pseudonymous-again/js-mapping.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-mapping/trends/technical_debt)
-[![Documentation](https://make-github-pseudonymous-again.github.io/js-mapping/badge.svg)](https://make-github-pseudonymous-again.github.io/js-mapping/source.html)
-[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-mapping)](https://bundlephobia.com/result?p=@aureooms/js-mapping)
+[![Code issues](https://img.shields.io/codeclimate/issues/iterable-iterator/mapping.svg)](https://codeclimate.com/github/iterable-iterator/mapping/issues)
+[![Code maintainability](https://img.shields.io/codeclimate/maintainability/iterable-iterator/mapping.svg)](https://codeclimate.com/github/iterable-iterator/mapping/trends/churn)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/iterable-iterator/mapping/main.svg)](https://codecov.io/gh/iterable-iterator/mapping)
+[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/iterable-iterator/mapping.svg)](https://codeclimate.com/github/iterable-iterator/mapping/trends/technical_debt)
+[![Documentation](https://iterable-iterator.github.io/mapping/badge.svg)](https://iterable-iterator.github.io/mapping/source.html)
+[![Package size](https://img.shields.io/bundlephobia/minzip/@iterable-iterator/mapping)](https://bundlephobia.com/result?p=@iterable-iterator/mapping)

@@ -6,10 +6,10 @@ or [npm](https://github.com/npm/npm).
 
 ### jspm
 ```terminal
-jspm install npm:@aureooms/js-mapping
+jspm install npm:@iterable-iterator/mapping
 ```
 
 ### npm
 ```terminal
-npm install @aureooms/js-mapping --save
+npm install @iterable-iterator/mapping --save
 ```

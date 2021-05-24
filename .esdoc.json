@@ -17,7 +17,7 @@
           "autoPrivate": true
         },
         "brand": {
-          "title": "@aureooms/js-mapping"
+          "title": "@iterable-iterator/mapping"
         },
         "test": {
           "type": "ava",

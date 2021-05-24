@@ -1,16 +1,16 @@
 {
-  "name": "@aureooms/js-mapping",
+  "name": "@iterable-iterator/mapping",
   "description": "Mapping library for JavaScript",
   "version": "6.0.1",
   "license": "AGPL-3.0",
-  "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
-  "homepage": "https://make-github-pseudonymous-again.github.io/js-mapping",
+  "author": "make-github-pseudonymous-again",
+  "homepage": "https://iterable-iterator.github.io/mapping",
   "repository": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-mapping",
+    "url": "https://github.com/iterable-iterator/mapping",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-mapping/issues"
+    "url": "https://github.com/iterable-iterator/mapping/issues"
   },
   "keywords": [
     "javascript",
