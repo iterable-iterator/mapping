@@ -7,7 +7,7 @@ Parent is [js-library](https://github.com/make-github-pseudonymous-again/js-libr
 
 ```js
 > import { fromKeys , reflect } from '@iterable-iterator/mapping' ;
-> import { enumerate } from '@aureooms/js-itertools' ;
+> import {enumerate} from '@iterable-iterator/zip';
 > fromKeys( 'ab' , 1 )
 [['a', 1], ['b', 1]]
 > reflect(enumerate('ab'))
