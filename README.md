@@ -6,14 +6,18 @@ See [docs](https://iterable-iterator.github.io/mapping).
 Parent is [js-library](https://github.com/make-github-pseudonymous-again/js-library).
 
 ```js
-> import { constant , reflect } from '@iterable-iterator/mapping' ;
-> import {enumerate} from '@iterable-iterator/zip';
-> constant( 'ab' , 1 )
-[['a', 1], ['b', 1]]
-> reflect(enumerate('ab'))
-[['a', 0], ['b', 1]]
-> Object.fromEntries(reflect(enumerate('ab')))
-{ 'a': 0, 'b': 1 }
+import {constant} from '@iterable-iterator/mapping' ;
+constant('ab', 1); // ['a', 1] ['b', 1]
+
+import {reflect} from '@iterable-iterator/mapping' ;
+import {enumerate} from '@iterable-iterator/zip';
+reflect(enumerate('ab')); // ['a', 0] ['b', 1]
+
+// You can convert to and from Object and Map
+Object.fromEntries(mapping) -> Object
+Object.entries(object) -> mapping
+new Map(mapping) -> Map
+map.entries() -> mapping
 ```
 
 [![License](https://img.shields.io/github/license/iterable-iterator/mapping.svg)](https://raw.githubusercontent.com/iterable-iterator/mapping/main/LICENSE)
