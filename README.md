@@ -6,9 +6,9 @@ See [docs](https://iterable-iterator.github.io/mapping).
 Parent is [js-library](https://github.com/make-github-pseudonymous-again/js-library).
 
 ```js
-> import { fromKeys , reflect } from '@iterable-iterator/mapping' ;
+> import { constant , reflect } from '@iterable-iterator/mapping' ;
 > import {enumerate} from '@iterable-iterator/zip';
-> fromKeys( 'ab' , 1 )
+> constant( 'ab' , 1 )
 [['a', 1], ['b', 1]]
 > reflect(enumerate('ab'))
 [['a', 0], ['b', 1]]

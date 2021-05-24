@@ -6,6 +6,6 @@
  * @param {any} value
  * @return {IterableIterator} The output mapping.
  */
-export default function* fromKeys(keys, value) {
+export default function* constant(keys, value) {
 	for (const key of keys) yield [key, value];
 }
