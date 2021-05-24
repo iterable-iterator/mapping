@@ -14,10 +14,11 @@ import {enumerate} from '@iterable-iterator/zip';
 reflect(enumerate('ab')); // ['a', 0] ['b', 1]
 
 // You can convert to and from Object and Map
-Object.fromEntries(mapping) -> Object
-Object.entries(object) -> mapping
-new Map(mapping) -> Map
-map.entries() -> mapping
+import {toObject, fromObject, toMap, fromMap} from '@iterable-iterator/mapping' ;
+toObject(mapping) -> Object
+fromObject(Object) -> mapping
+toMap(mapping) -> Map
+fromMap(Map) -> mapping
 ```
 
 [![License](https://img.shields.io/github/license/iterable-iterator/mapping.svg)](https://raw.githubusercontent.com/iterable-iterator/mapping/main/LICENSE)
