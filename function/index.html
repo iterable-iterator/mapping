@@ -29,8 +29,11 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fromKeys">fromKeys</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-reflect">reflect</a></span></span></li>
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-constant">constant</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fromMap">fromMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fromObject">fromObject</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-inverse">inverse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-toMap">toMap</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-toObject">toObject</a></span></span></li>
 </ul>
 </div>
@@ -55,7 +58,7 @@
           
           
           <span data-ice="generator">*</span>
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-fromKeys">fromKeys</a></span></span><span class="code" data-ice="signature">(keys: <span>Iterable</span>, value: <span>any</span>): <span>IterableIterator</span></span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-constant">constant</a></span></span><span class="code" data-ice="signature">(keys: <span>Iterable</span>, value: <span>any</span>): <span>IterableIterator</span></span>
         </p>
       </div>
       <div>
@@ -83,14 +86,101 @@
         <p>
           
           
-          <span data-ice="generator">*</span>
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-reflect">reflect</a></span></span><span class="code" data-ice="signature">(mapping: <span>Iterable</span>): <span>IterableIterator</span></span>
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-fromMap">fromMap</a></span></span><span class="code" data-ice="signature">(map: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></span>): <span>IterableIterator</span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Swap keys and values of a mapping.</p>
+        <div data-ice="description"><p>Instantiate a mapping from a map.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-fromObject">fromObject</a></span></span><span class="code" data-ice="signature">(object: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>): <span>IterableIterator</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Instantiate a mapping from an object.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          <span data-ice="generator">*</span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-inverse">inverse</a></span></span><span class="code" data-ice="signature">(mapping: <span>Iterable</span>): <span>IterableIterator</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Inverse a mapping.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-toMap">toMap</a></span></span><span class="code" data-ice="signature">(mapping: <span>Iterable</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Instantiate a map from a mapping.</p>
 </div>
       </div>
     </td>
@@ -117,7 +207,7 @@
         </p>
       </div>
       <div>
-        <div class="deprecated" data-ice="deprecated">this function was deprecated. Use Object.fromEntries(mapping) directly.</div>
+        
         
         <div data-ice="description"><p>Instantiate an object from a mapping.</p>
 </div>
@@ -134,22 +224,22 @@
 <div data-ice="details"><h2 data-ice="title">Static Public </h2>
 
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-function-fromKeys">
+  <h3 data-ice="anchor" id="static-function-constant">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     <span data-ice="generator">*</span>
-    <span class="code" data-ice="name">fromKeys</span><span class="code" data-ice="signature">(keys: <span>Iterable</span>, value: <span>any</span>): <span>IterableIterator</span></span>
+    <span class="code" data-ice="name">constant</span><span class="code" data-ice="signature">(keys: <span>Iterable</span>, value: <span>any</span>): <span>IterableIterator</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/fromKeys.js.html#lineNumber9">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/constant.js.html#lineNumber9">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import fromKeys from &apos;<span><a href="file/src/fromKeys.js.html#lineNumber9">@iterable-iterator/mapping/src/fromKeys.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import constant from &apos;<span><a href="file/src/constant.js.html#lineNumber9">@iterable-iterator/mapping/src/constant.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Creates a mapping from a sequences of keys and a single value. All keys are
@@ -214,25 +304,173 @@ mapped to that single value.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-function-reflect">
+  <h3 data-ice="anchor" id="static-function-fromMap">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">fromMap</span><span class="code" data-ice="signature">(map: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></span>): <span>IterableIterator</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/fromMap.js.html#lineNumber7">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import fromMap from &apos;<span><a href="file/src/fromMap.js.html#lineNumber7">@iterable-iterator/mapping/src/fromMap.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Instantiate a mapping from a map.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">map</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The input map.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>IterableIterator</span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>The output mapping.</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-fromObject">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">fromObject</span><span class="code" data-ice="signature">(object: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>): <span>IterableIterator</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/fromObject.js.html#lineNumber7">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import fromObject from &apos;<span><a href="file/src/fromObject.js.html#lineNumber7">@iterable-iterator/mapping/src/fromObject.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Instantiate a mapping from an object.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">object</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The input object.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>IterableIterator</span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>The output mapping.</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-inverse">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     <span data-ice="generator">*</span>
-    <span class="code" data-ice="name">reflect</span><span class="code" data-ice="signature">(mapping: <span>Iterable</span>): <span>IterableIterator</span></span>
+    <span class="code" data-ice="name">inverse</span><span class="code" data-ice="signature">(mapping: <span>Iterable</span>): <span>IterableIterator</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/reflect.js.html#lineNumber7">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/inverse.js.html#lineNumber7">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import reflect from &apos;<span><a href="file/src/reflect.js.html#lineNumber7">@iterable-iterator/mapping/src/reflect.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import inverse from &apos;<span><a href="file/src/inverse.js.html#lineNumber7">@iterable-iterator/mapping/src/inverse.js</a></span>&apos;</code></pre></div>
   
   
-  <div data-ice="description"><p>Swap keys and values of a mapping.</p>
+  <div data-ice="description"><p>Inverse a mapping.</p>
 </div>
 
   
@@ -263,7 +501,81 @@ mapped to that single value.</p>
       <tbody>
         <tr>
           <td class="return-type code" data-ice="returnType"><span>IterableIterator</span></td>
-          <td class="return-desc" data-ice="returnDescription"><p>A new mapping with input keys and values swapped.</p>
+          <td class="return-desc" data-ice="returnDescription"><p>The output mapping.</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-toMap">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">toMap</span><span class="code" data-ice="signature">(mapping: <span>Iterable</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/toMap.js.html#lineNumber7">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import toMap from &apos;<span><a href="file/src/toMap.js.html#lineNumber7">@iterable-iterator/mapping/src/toMap.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Instantiate a map from a mapping.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">mapping</td>
+      <td data-ice="type" class="code"><span>Iterable</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The input mapping.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>The output map.</p>
 </td>
         </tr>
       </tbody>
@@ -299,12 +611,12 @@ mapped to that single value.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/toObject.js.html#lineNumber9">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/toObject.js.html#lineNumber7">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import toObject from &apos;<span><a href="file/src/toObject.js.html#lineNumber9">@iterable-iterator/mapping/src/toObject.js</a></span>&apos;</code></pre></div>
-  <div class="deprecated" data-ice="deprecated">this function was deprecated. Use Object.fromEntries(mapping) directly.</div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import toObject from &apos;<span><a href="file/src/toObject.js.html#lineNumber7">@iterable-iterator/mapping/src/toObject.js</a></span>&apos;</code></pre></div>
+  
   
   <div data-ice="description"><p>Instantiate an object from a mapping.</p>
 </div>

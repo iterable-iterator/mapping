@@ -1,14 +1,32 @@
 window.esdocSearchIndex = [
   [
-    "@iterable-iterator/mapping/src/fromkeys.js~fromkeys",
-    "function/index.html#static-function-fromKeys",
-    "<span>fromKeys</span> <span class=\"search-result-import-path\">@iterable-iterator/mapping/src/fromKeys.js</span>",
+    "@iterable-iterator/mapping/src/constant.js~constant",
+    "function/index.html#static-function-constant",
+    "<span>constant</span> <span class=\"search-result-import-path\">@iterable-iterator/mapping/src/constant.js</span>",
     "function"
   ],
   [
-    "@iterable-iterator/mapping/src/reflect.js~reflect",
-    "function/index.html#static-function-reflect",
-    "<span>reflect</span> <span class=\"search-result-import-path\">@iterable-iterator/mapping/src/reflect.js</span>",
+    "@iterable-iterator/mapping/src/frommap.js~frommap",
+    "function/index.html#static-function-fromMap",
+    "<span>fromMap</span> <span class=\"search-result-import-path\">@iterable-iterator/mapping/src/fromMap.js</span>",
+    "function"
+  ],
+  [
+    "@iterable-iterator/mapping/src/fromobject.js~fromobject",
+    "function/index.html#static-function-fromObject",
+    "<span>fromObject</span> <span class=\"search-result-import-path\">@iterable-iterator/mapping/src/fromObject.js</span>",
+    "function"
+  ],
+  [
+    "@iterable-iterator/mapping/src/inverse.js~inverse",
+    "function/index.html#static-function-inverse",
+    "<span>inverse</span> <span class=\"search-result-import-path\">@iterable-iterator/mapping/src/inverse.js</span>",
+    "function"
+  ],
+  [
+    "@iterable-iterator/mapping/src/tomap.js~tomap",
+    "function/index.html#static-function-toMap",
+    "<span>toMap</span> <span class=\"search-result-import-path\">@iterable-iterator/mapping/src/toMap.js</span>",
     "function"
   ],
   [
@@ -300,9 +318,21 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
-    "src/fromkeys.js",
-    "file/src/fromKeys.js.html",
-    "src/fromKeys.js",
+    "src/constant.js",
+    "file/src/constant.js.html",
+    "src/constant.js",
+    "file"
+  ],
+  [
+    "src/frommap.js",
+    "file/src/fromMap.js.html",
+    "src/fromMap.js",
+    "file"
+  ],
+  [
+    "src/fromobject.js",
+    "file/src/fromObject.js.html",
+    "src/fromObject.js",
     "file"
   ],
   [
@@ -312,9 +342,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/reflect.js",
-    "file/src/reflect.js.html",
-    "src/reflect.js",
+    "src/inverse.js",
+    "file/src/inverse.js.html",
+    "src/inverse.js",
+    "file"
+  ],
+  [
+    "src/tomap.js",
+    "file/src/toMap.js.html",
+    "src/toMap.js",
     "file"
   ],
   [

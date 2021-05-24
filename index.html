@@ -29,8 +29,11 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fromKeys">fromKeys</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-reflect">reflect</a></span></span></li>
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-constant">constant</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fromMap">fromMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fromObject">fromObject</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-inverse">inverse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-toMap">toMap</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-toObject">toObject</a></span></span></li>
 </ul>
 </div>
@@ -39,14 +42,19 @@
 <div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-phone---a-href--https---iterable-iterator-github-io-mapping---iterable-iterator-mapping--a-">:phone: <a href="https://iterable-iterator.github.io/mapping">@iterable-iterator/mapping</a></h1><p>Mapping library for JavaScript.
 See <a href="https://iterable-iterator.github.io/mapping">docs</a>.
 Parent is <a href="https://github.com/make-github-pseudonymous-again/js-library">js-library</a>.</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">&gt; import { fromKeys , reflect } from &apos;@iterable-iterator/mapping&apos; ;
-&gt; import {enumerate} from &apos;@iterable-iterator/zip&apos;;
-&gt; fromKeys( &apos;ab&apos; , 1 )
-[[&apos;a&apos;, 1], [&apos;b&apos;, 1]]
-&gt; reflect(enumerate(&apos;ab&apos;))
-[[&apos;a&apos;, 0], [&apos;b&apos;, 1]]
-&gt; Object.fromEntries(reflect(enumerate(&apos;ab&apos;)))
-{ &apos;a&apos;: 0, &apos;b&apos;: 1 }</code>
+<pre><code class="lang-js"><code class="source-code prettyprint">import {constant} from &apos;@iterable-iterator/mapping&apos; ;
+constant(&apos;ab&apos;, 1); // [&apos;a&apos;, 1] [&apos;b&apos;, 1]
+
+import {inverse} from &apos;@iterable-iterator/mapping&apos; ;
+import {enumerate} from &apos;@iterable-iterator/zip&apos;;
+inverse(enumerate(&apos;ab&apos;)); // [&apos;a&apos;, 0] [&apos;b&apos;, 1]
+
+// You can convert to and from Object and Map
+import {toObject, fromObject, toMap, fromMap} from &apos;@iterable-iterator/mapping&apos; ;
+toObject(mapping) -&gt; Object
+fromObject(Object) -&gt; mapping
+toMap(mapping) -&gt; Map
+fromMap(Map) -&gt; mapping</code>
 </code></pre>
 <p><a href="https://raw.githubusercontent.com/iterable-iterator/mapping/main/LICENSE"><img src="https://img.shields.io/github/license/iterable-iterator/mapping.svg" alt="License"></a>
 <a href="https://www.npmjs.org/package/@iterable-iterator/mapping"><img src="https://img.shields.io/npm/v/@iterable-iterator/mapping.svg" alt="Version"></a>

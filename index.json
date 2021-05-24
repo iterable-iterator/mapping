@@ -566,10 +566,10 @@
   {
     "__docId__": 48,
     "kind": "file",
-    "name": "src/fromKeys.js",
-    "content": "/**\n * Creates a mapping from a sequences of keys and a single value. All keys are\n * mapped to that single value.\n *\n * @param {Iterable} keys\n * @param {any} value\n * @return {IterableIterator} The output mapping.\n */\nexport default function* fromKeys(keys, value) {\n\tfor (const key of keys) yield [key, value];\n}\n",
+    "name": "src/constant.js",
+    "content": "/**\n * Creates a mapping from a sequences of keys and a single value. All keys are\n * mapped to that single value.\n *\n * @param {Iterable} keys\n * @param {any} value\n * @return {IterableIterator} The output mapping.\n */\nexport default function* constant(keys, value) {\n\tfor (const key of keys) yield [key, value];\n}\n",
     "static": true,
-    "longname": "/home/runner/work/mapping/mapping/src/fromKeys.js",
+    "longname": "/home/runner/work/mapping/mapping/src/constant.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -577,16 +577,16 @@
   {
     "__docId__": 49,
     "kind": "function",
-    "name": "fromKeys",
-    "memberof": "src/fromKeys.js",
+    "name": "constant",
+    "memberof": "src/constant.js",
     "generator": true,
     "async": false,
     "static": true,
-    "longname": "src/fromKeys.js~fromKeys",
+    "longname": "src/constant.js~constant",
     "access": "public",
     "export": true,
-    "importPath": "@iterable-iterator/mapping/src/fromKeys.js",
-    "importStyle": "fromKeys",
+    "importPath": "@iterable-iterator/mapping/src/constant.js",
+    "importStyle": "constant",
     "description": "Creates a mapping from a sequences of keys and a single value. All keys are\nmapped to that single value.",
     "lineNumber": 9,
     "params": [
@@ -623,8 +623,102 @@
   {
     "__docId__": 50,
     "kind": "file",
+    "name": "src/fromMap.js",
+    "content": "/**\n * Instantiate a mapping from a map.\n *\n * @param {Map} map The input map.\n * @return {IterableIterator} The output mapping.\n */\nconst fromMap = (map) => map.entries();\nexport default fromMap;\n",
+    "static": true,
+    "longname": "/home/runner/work/mapping/mapping/src/fromMap.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "function",
+    "name": "fromMap",
+    "memberof": "src/fromMap.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/fromMap.js~fromMap",
+    "access": "public",
+    "export": true,
+    "importPath": "@iterable-iterator/mapping/src/fromMap.js",
+    "importStyle": "fromMap",
+    "description": "Instantiate a mapping from a map.",
+    "lineNumber": 7,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Map"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "map",
+        "description": "The input map."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "IterableIterator"
+      ],
+      "spread": false,
+      "description": "The output mapping."
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "src/fromObject.js",
+    "content": "/**\n * Instantiate a mapping from an object.\n *\n * @param {Object} object The input object.\n * @return {IterableIterator} The output mapping.\n */\nconst fromObject = (object) => Object.entries(object)[Symbol.iterator]();\nexport default fromObject;\n",
+    "static": true,
+    "longname": "/home/runner/work/mapping/mapping/src/fromObject.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "fromObject",
+    "memberof": "src/fromObject.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/fromObject.js~fromObject",
+    "access": "public",
+    "export": true,
+    "importPath": "@iterable-iterator/mapping/src/fromObject.js",
+    "importStyle": "fromObject",
+    "description": "Instantiate a mapping from an object.",
+    "lineNumber": 7,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "object",
+        "description": "The input object."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "IterableIterator"
+      ],
+      "spread": false,
+      "description": "The output mapping."
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "file",
     "name": "src/index.js",
-    "content": "export {default as fromKeys} from './fromKeys.js';\nexport {default as reflect} from './reflect.js';\nexport {default as toObject} from './toObject.js';\n",
+    "content": "export {default as constant} from './constant.js';\nexport {default as fromMap} from './fromMap.js';\nexport {default as fromObject} from './fromObject.js';\nexport {default as inverse} from './inverse.js';\nexport {default as toMap} from './toMap.js';\nexport {default as toObject} from './toObject.js';\n",
     "static": true,
     "longname": "/home/runner/work/mapping/mapping/src/index.js",
     "access": "public",
@@ -632,30 +726,30 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 51,
+    "__docId__": 55,
     "kind": "file",
-    "name": "src/reflect.js",
-    "content": "/**\n * Swap keys and values of a mapping.\n *\n * @param {Iterable} mapping The input mapping.\n * @return {IterableIterator} A new mapping with input keys and values swapped.\n */\nexport default function* reflect(mapping) {\n\tfor (const [key, value] of mapping) yield [value, key];\n}\n",
+    "name": "src/inverse.js",
+    "content": "/**\n * Inverse a mapping.\n *\n * @param {Iterable} mapping The input mapping.\n * @return {IterableIterator} The output mapping.\n */\nexport default function* inverse(mapping) {\n\tfor (const [key, value] of mapping) yield [value, key];\n}\n",
     "static": true,
-    "longname": "/home/runner/work/mapping/mapping/src/reflect.js",
+    "longname": "/home/runner/work/mapping/mapping/src/inverse.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 52,
+    "__docId__": 56,
     "kind": "function",
-    "name": "reflect",
-    "memberof": "src/reflect.js",
+    "name": "inverse",
+    "memberof": "src/inverse.js",
     "generator": true,
     "async": false,
     "static": true,
-    "longname": "src/reflect.js~reflect",
+    "longname": "src/inverse.js~inverse",
     "access": "public",
     "export": true,
-    "importPath": "@iterable-iterator/mapping/src/reflect.js",
-    "importStyle": "reflect",
-    "description": "Swap keys and values of a mapping.",
+    "importPath": "@iterable-iterator/mapping/src/inverse.js",
+    "importStyle": "inverse",
+    "description": "Inverse a mapping.",
     "lineNumber": 7,
     "params": [
       {
@@ -675,14 +769,61 @@
         "IterableIterator"
       ],
       "spread": false,
-      "description": "A new mapping with input keys and values swapped."
+      "description": "The output mapping."
     }
   },
   {
-    "__docId__": 53,
+    "__docId__": 57,
+    "kind": "file",
+    "name": "src/toMap.js",
+    "content": "/**\n * Instantiate a map from a mapping.\n *\n * @param {Iterable} mapping The input mapping.\n * @return {Map} The output map.\n */\nconst toMap = (mapping) => new Map(mapping);\nexport default toMap;\n",
+    "static": true,
+    "longname": "/home/runner/work/mapping/mapping/src/toMap.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 58,
+    "kind": "function",
+    "name": "toMap",
+    "memberof": "src/toMap.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/toMap.js~toMap",
+    "access": "public",
+    "export": true,
+    "importPath": "@iterable-iterator/mapping/src/toMap.js",
+    "importStyle": "toMap",
+    "description": "Instantiate a map from a mapping.",
+    "lineNumber": 7,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "mapping",
+        "description": "The input mapping."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Map"
+      ],
+      "spread": false,
+      "description": "The output map."
+    }
+  },
+  {
+    "__docId__": 59,
     "kind": "file",
     "name": "src/toObject.js",
-    "content": "/**\n * Instantiate an object from a mapping.\n *\n * @deprecated Use Object.fromEntries(mapping) directly.\n *\n * @param {Iterable} mapping The input mapping.\n * @return {Object} The output object.\n */\nconst toObject = (mapping) => Object.fromEntries(mapping);\nexport default toObject;\n",
+    "content": "/**\n * Instantiate an object from a mapping.\n *\n * @param {Iterable} mapping The input mapping.\n * @return {Object} The output object.\n */\nconst toObject = (mapping) => Object.fromEntries(mapping);\nexport default toObject;\n",
     "static": true,
     "longname": "/home/runner/work/mapping/mapping/src/toObject.js",
     "access": "public",
@@ -690,7 +831,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 54,
+    "__docId__": 60,
     "kind": "function",
     "name": "toObject",
     "memberof": "src/toObject.js",
@@ -703,8 +844,7 @@
     "importPath": "@iterable-iterator/mapping/src/toObject.js",
     "importStyle": "toObject",
     "description": "Instantiate an object from a mapping.",
-    "lineNumber": 9,
-    "deprecated": "Use Object.fromEntries(mapping) directly.",
+    "lineNumber": 7,
     "params": [
       {
         "nullable": null,
@@ -728,7 +868,7 @@
   },
   {
     "kind": "index",
-    "content": ":phone: [@iterable-iterator/mapping](https://iterable-iterator.github.io/mapping)\n==\n\nMapping library for JavaScript.\nSee [docs](https://iterable-iterator.github.io/mapping).\nParent is [js-library](https://github.com/make-github-pseudonymous-again/js-library).\n\n```js\n> import { fromKeys , reflect } from '@iterable-iterator/mapping' ;\n> import {enumerate} from '@iterable-iterator/zip';\n> fromKeys( 'ab' , 1 )\n[['a', 1], ['b', 1]]\n> reflect(enumerate('ab'))\n[['a', 0], ['b', 1]]\n> Object.fromEntries(reflect(enumerate('ab')))\n{ 'a': 0, 'b': 1 }\n```\n\n[![License](https://img.shields.io/github/license/iterable-iterator/mapping.svg)](https://raw.githubusercontent.com/iterable-iterator/mapping/main/LICENSE)\n[![Version](https://img.shields.io/npm/v/@iterable-iterator/mapping.svg)](https://www.npmjs.org/package/@iterable-iterator/mapping)\n[![Tests](https://img.shields.io/github/workflow/status/iterable-iterator/mapping/ci:test?event=push&label=tests)](https://github.com/iterable-iterator/mapping/actions/workflows/ci:test.yml?query=branch:main)\n[![Dependencies](https://img.shields.io/david/iterable-iterator/mapping.svg)](https://david-dm.org/iterable-iterator/mapping)\n[![Dev dependencies](https://img.shields.io/david/dev/iterable-iterator/mapping.svg)](https://david-dm.org/iterable-iterator/mapping?type=dev)\n[![GitHub issues](https://img.shields.io/github/issues/iterable-iterator/mapping.svg)](https://github.com/iterable-iterator/mapping/issues)\n[![Downloads](https://img.shields.io/npm/dm/@iterable-iterator/mapping.svg)](https://www.npmjs.org/package/@iterable-iterator/mapping)\n\n[![Code issues](https://img.shields.io/codeclimate/issues/iterable-iterator/mapping.svg)](https://codeclimate.com/github/iterable-iterator/mapping/issues)\n[![Code maintainability](https://img.shields.io/codeclimate/maintainability/iterable-iterator/mapping.svg)](https://codeclimate.com/github/iterable-iterator/mapping/trends/churn)\n[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/iterable-iterator/mapping/main.svg)](https://codecov.io/gh/iterable-iterator/mapping)\n[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/iterable-iterator/mapping.svg)](https://codeclimate.com/github/iterable-iterator/mapping/trends/technical_debt)\n[![Documentation](https://iterable-iterator.github.io/mapping/badge.svg)](https://iterable-iterator.github.io/mapping/source.html)\n[![Package size](https://img.shields.io/bundlephobia/minzip/@iterable-iterator/mapping)](https://bundlephobia.com/result?p=@iterable-iterator/mapping)\n",
+    "content": ":phone: [@iterable-iterator/mapping](https://iterable-iterator.github.io/mapping)\n==\n\nMapping library for JavaScript.\nSee [docs](https://iterable-iterator.github.io/mapping).\nParent is [js-library](https://github.com/make-github-pseudonymous-again/js-library).\n\n```js\nimport {constant} from '@iterable-iterator/mapping' ;\nconstant('ab', 1); // ['a', 1] ['b', 1]\n\nimport {inverse} from '@iterable-iterator/mapping' ;\nimport {enumerate} from '@iterable-iterator/zip';\ninverse(enumerate('ab')); // ['a', 0] ['b', 1]\n\n// You can convert to and from Object and Map\nimport {toObject, fromObject, toMap, fromMap} from '@iterable-iterator/mapping' ;\ntoObject(mapping) -> Object\nfromObject(Object) -> mapping\ntoMap(mapping) -> Map\nfromMap(Map) -> mapping\n```\n\n[![License](https://img.shields.io/github/license/iterable-iterator/mapping.svg)](https://raw.githubusercontent.com/iterable-iterator/mapping/main/LICENSE)\n[![Version](https://img.shields.io/npm/v/@iterable-iterator/mapping.svg)](https://www.npmjs.org/package/@iterable-iterator/mapping)\n[![Tests](https://img.shields.io/github/workflow/status/iterable-iterator/mapping/ci:test?event=push&label=tests)](https://github.com/iterable-iterator/mapping/actions/workflows/ci:test.yml?query=branch:main)\n[![Dependencies](https://img.shields.io/david/iterable-iterator/mapping.svg)](https://david-dm.org/iterable-iterator/mapping)\n[![Dev dependencies](https://img.shields.io/david/dev/iterable-iterator/mapping.svg)](https://david-dm.org/iterable-iterator/mapping?type=dev)\n[![GitHub issues](https://img.shields.io/github/issues/iterable-iterator/mapping.svg)](https://github.com/iterable-iterator/mapping/issues)\n[![Downloads](https://img.shields.io/npm/dm/@iterable-iterator/mapping.svg)](https://www.npmjs.org/package/@iterable-iterator/mapping)\n\n[![Code issues](https://img.shields.io/codeclimate/issues/iterable-iterator/mapping.svg)](https://codeclimate.com/github/iterable-iterator/mapping/issues)\n[![Code maintainability](https://img.shields.io/codeclimate/maintainability/iterable-iterator/mapping.svg)](https://codeclimate.com/github/iterable-iterator/mapping/trends/churn)\n[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/iterable-iterator/mapping/main.svg)](https://codecov.io/gh/iterable-iterator/mapping)\n[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/iterable-iterator/mapping.svg)](https://codeclimate.com/github/iterable-iterator/mapping/trends/technical_debt)\n[![Documentation](https://iterable-iterator.github.io/mapping/badge.svg)](https://iterable-iterator.github.io/mapping/source.html)\n[![Package size](https://img.shields.io/bundlephobia/minzip/@iterable-iterator/mapping)](https://bundlephobia.com/result?p=@iterable-iterator/mapping)\n",
     "longname": "/home/runner/work/mapping/mapping/README.md",
     "name": "./README.md",
     "static": true,
@@ -736,7 +876,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"@iterable-iterator/mapping\",\n  \"description\": \"Mapping library for JavaScript\",\n  \"version\": \"7.0.0\",\n  \"license\": \"AGPL-3.0\",\n  \"author\": \"make-github-pseudonymous-again\",\n  \"homepage\": \"https://iterable-iterator.github.io/mapping\",\n  \"repository\": {\n    \"url\": \"https://github.com/iterable-iterator/mapping\",\n    \"type\": \"git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/iterable-iterator/mapping/issues\"\n  },\n  \"keywords\": [\n    \"javascript\",\n    \"js\",\n    \"mapping\"\n  ],\n  \"sideEffects\": false,\n  \"source\": \"src/index.js\",\n  \"main\": \"dist/index.js\",\n  \"module\": \"dist/index.module.js\",\n  \"esmodule\": \"dist/index.modern.js\",\n  \"umd:main\": \"dist/index.umd.js\",\n  \"unpkg\": \"dist/index.umd.js\",\n  \"exports\": {\n    \".\": {\n      \"browser\": \"./dist/index.module.js\",\n      \"umd\": \"./dist/index.umd.js\",\n      \"require\": \"./dist/index.js\",\n      \"default\": \"./dist/index.modern.js\"\n    }\n  },\n  \"files\": [\n    \"dist\"\n  ],\n  \"scripts\": {\n    \"build\": \"NODE_ENV=production microbundle\",\n    \"build-docs\": \"esdoc\",\n    \"build-gh-pages\": \"npm run build-docs\",\n    \"ci:test\": \"npm run lint-config && npm run lint && npm run cover\",\n    \"commit-msg\": \"commitlint --edit\",\n    \"cover\": \"NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test\",\n    \"debug\": \"NODE_ENV=debug npm run test -- -st --fail-fast\",\n    \"dev\": \"npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast\",\n    \"install-hooks\": \"husky install\",\n    \"lint\": \"xo\",\n    \"lint-and-fix\": \"npm run lint -- --fix\",\n    \"lint-config\": \"fixpack --dryRun\",\n    \"lint-config-and-fix\": \"fixpack || fixpack\",\n    \"postinstall\": \"npm run install-hooks\",\n    \"postpublish\": \"pinst --enable\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"pinst --disable\",\n    \"release\": \"np --message ':hatching_chick: release: Bumping to v%s.'\",\n    \"test\": \"ava\"\n  },\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@babel/core\": \"7.14.3\",\n    \"@babel/preset-env\": \"7.14.2\",\n    \"@babel/register\": \"7.13.16\",\n    \"@commitlint/cli\": \"12.1.4\",\n    \"@iterable-iterator/zip\": \"^0.0.2\",\n    \"@js-library/commitlint-config\": \"0.0.4\",\n    \"ava\": \"3.15.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.1.0\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"c8\": \"7.7.2\",\n    \"coveralls\": \"3.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"fixpack\": \"4.0.0\",\n    \"husky\": \"6.0.0\",\n    \"lint-staged\": \"11.0.0\",\n    \"microbundle\": \"0.13.0\",\n    \"np\": \"7.5.0\",\n    \"pinst\": \"2.1.6\",\n    \"power-assert\": \"1.6.1\",\n    \"regenerator-runtime\": \"0.13.7\",\n    \"xo\": \"0.40.1\"\n  },\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"1m\"\n  },\n  \"babel\": {\n    \"sourceMaps\": true,\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"targets\": \"current node\"\n        }\n      ]\n    ],\n    \"plugins\": [\n      [\n        \"transform-remove-console\",\n        {\n          \"exclude\": [\n            \"log\",\n            \"error\",\n            \"warn\"\n          ]\n        }\n      ]\n    ],\n    \"env\": {\n      \"debug\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"debug\",\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"cover\": {\n        \"sourceMaps\": \"both\",\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"development\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"production\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ]\n        ],\n        \"plugins\": [\n          \"babel-plugin-unassert\"\n        ]\n      }\n    }\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint-and-fix\"\n    ],\n    \"package.json\": [\n      \"npm run lint-config-and-fix\"\n    ]\n  },\n  \"prettier\": {\n    \"trailingComma\": \"all\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"plugins\": [\n      \"unicorn\"\n    ],\n    \"rules\": {\n      \"unicorn/filename-case\": [\n        \"error\",\n        {\n          \"cases\": {\n            \"camelCase\": true,\n            \"pascalCase\": true\n          }\n        }\n      ]\n    },\n    \"overrides\": [\n      {\n        \"files\": [\n          \"doc/**\"\n        ],\n        \"env\": \"browser\"\n      }\n    ]\n  }\n}\n",
+    "content": "{\n  \"name\": \"@iterable-iterator/mapping\",\n  \"description\": \"Mapping library for JavaScript\",\n  \"version\": \"8.0.0\",\n  \"license\": \"AGPL-3.0\",\n  \"author\": \"make-github-pseudonymous-again\",\n  \"homepage\": \"https://iterable-iterator.github.io/mapping\",\n  \"repository\": {\n    \"url\": \"https://github.com/iterable-iterator/mapping\",\n    \"type\": \"git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/iterable-iterator/mapping/issues\"\n  },\n  \"keywords\": [\n    \"javascript\",\n    \"js\",\n    \"mapping\"\n  ],\n  \"sideEffects\": false,\n  \"source\": \"src/index.js\",\n  \"main\": \"dist/index.js\",\n  \"module\": \"dist/index.module.js\",\n  \"esmodule\": \"dist/index.modern.js\",\n  \"umd:main\": \"dist/index.umd.js\",\n  \"unpkg\": \"dist/index.umd.js\",\n  \"exports\": {\n    \".\": {\n      \"browser\": \"./dist/index.module.js\",\n      \"umd\": \"./dist/index.umd.js\",\n      \"require\": \"./dist/index.js\",\n      \"default\": \"./dist/index.modern.js\"\n    }\n  },\n  \"files\": [\n    \"dist\"\n  ],\n  \"scripts\": {\n    \"build\": \"NODE_ENV=production microbundle\",\n    \"build-docs\": \"esdoc\",\n    \"build-gh-pages\": \"npm run build-docs\",\n    \"ci:test\": \"npm run lint-config && npm run lint && npm run cover\",\n    \"commit-msg\": \"commitlint --edit\",\n    \"cover\": \"NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test\",\n    \"debug\": \"NODE_ENV=debug npm run test -- -st --fail-fast\",\n    \"dev\": \"npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast\",\n    \"install-hooks\": \"husky install\",\n    \"lint\": \"xo\",\n    \"lint-and-fix\": \"npm run lint -- --fix\",\n    \"lint-config\": \"fixpack --dryRun\",\n    \"lint-config-and-fix\": \"fixpack || fixpack\",\n    \"postinstall\": \"npm run install-hooks\",\n    \"postpublish\": \"pinst --enable\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"pinst --disable\",\n    \"release\": \"np --message ':hatching_chick: release: Bumping to v%s.'\",\n    \"test\": \"ava\"\n  },\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@babel/core\": \"7.14.3\",\n    \"@babel/preset-env\": \"7.14.2\",\n    \"@babel/register\": \"7.13.16\",\n    \"@commitlint/cli\": \"12.1.4\",\n    \"@iterable-iterator/zip\": \"^0.0.2\",\n    \"@js-library/commitlint-config\": \"0.0.4\",\n    \"ava\": \"3.15.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.1.0\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"c8\": \"7.7.2\",\n    \"coveralls\": \"3.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"fixpack\": \"4.0.0\",\n    \"husky\": \"6.0.0\",\n    \"lint-staged\": \"11.0.0\",\n    \"microbundle\": \"0.13.0\",\n    \"np\": \"7.5.0\",\n    \"pinst\": \"2.1.6\",\n    \"power-assert\": \"1.6.1\",\n    \"regenerator-runtime\": \"0.13.7\",\n    \"xo\": \"0.40.1\"\n  },\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"1m\"\n  },\n  \"babel\": {\n    \"sourceMaps\": true,\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"targets\": \"current node\"\n        }\n      ]\n    ],\n    \"plugins\": [\n      [\n        \"transform-remove-console\",\n        {\n          \"exclude\": [\n            \"log\",\n            \"error\",\n            \"warn\"\n          ]\n        }\n      ]\n    ],\n    \"env\": {\n      \"debug\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"debug\",\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"cover\": {\n        \"sourceMaps\": \"both\",\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"development\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"production\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ]\n        ],\n        \"plugins\": [\n          \"babel-plugin-unassert\"\n        ]\n      }\n    }\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint-and-fix\"\n    ],\n    \"package.json\": [\n      \"npm run lint-config-and-fix\"\n    ]\n  },\n  \"prettier\": {\n    \"trailingComma\": \"all\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"plugins\": [\n      \"unicorn\"\n    ],\n    \"rules\": {\n      \"unicorn/filename-case\": [\n        \"error\",\n        {\n          \"cases\": {\n            \"camelCase\": true,\n            \"pascalCase\": true\n          }\n        }\n      ]\n    },\n    \"overrides\": [\n      {\n        \"files\": [\n          \"doc/**\"\n        ],\n        \"env\": \"browser\"\n      }\n    ]\n  }\n}\n",
     "longname": "/home/runner/work/mapping/mapping/package.json",
     "name": "package.json",
     "static": true,

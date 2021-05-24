@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 223,
+  "end": 196,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 223,
+    "end": 196,
     "loc": {
       "start": {
         "line": 1,
@@ -30,8 +30,8 @@
     "body": [
       {
         "type": "Identifier",
-        "start": 139,
-        "end": 197,
+        "start": 129,
+        "end": 173,
         "loc": {
           "start": {
             "line": 7,
@@ -39,14 +39,14 @@
           },
           "end": {
             "line": 7,
-            "column": 58
+            "column": 44
           }
         },
         "declarations": [
           {
             "type": "VariableDeclarator",
-            "start": 145,
-            "end": 196,
+            "start": 135,
+            "end": 172,
             "loc": {
               "start": {
                 "line": 7,
@@ -54,13 +54,13 @@
               },
               "end": {
                 "line": 7,
-                "column": 57
+                "column": 43
               }
             },
             "id": {
               "type": "Identifier",
-              "start": 145,
-              "end": 153,
+              "start": 135,
+              "end": 140,
               "loc": {
                 "start": {
                   "line": 7,
@@ -68,25 +68,25 @@
                 },
                 "end": {
                   "line": 7,
-                  "column": 14
+                  "column": 11
                 },
-                "identifierName": "toObject"
+                "identifierName": "toMap"
               },
-              "name": "toObject",
+              "name": "toMap",
               "leadingComments": null
             },
             "init": {
               "type": "ArrowFunctionExpression",
-              "start": 156,
-              "end": 196,
+              "start": 143,
+              "end": 172,
               "loc": {
                 "start": {
                   "line": 7,
-                  "column": 17
+                  "column": 14
                 },
                 "end": {
                   "line": 7,
-                  "column": 57
+                  "column": 43
                 }
               },
               "id": null,
@@ -96,16 +96,16 @@
               "params": [
                 {
                   "type": "Identifier",
-                  "start": 157,
-                  "end": 164,
+                  "start": 144,
+                  "end": 151,
                   "loc": {
                     "start": {
                       "line": 7,
-                      "column": 18
+                      "column": 15
                     },
                     "end": {
                       "line": 7,
-                      "column": 25
+                      "column": 22
                     },
                     "identifierName": "mapping"
                   },
@@ -113,82 +113,49 @@
                 }
               ],
               "body": {
-                "type": "CallExpression",
-                "start": 169,
-                "end": 196,
+                "type": "NewExpression",
+                "start": 156,
+                "end": 172,
                 "loc": {
                   "start": {
                     "line": 7,
-                    "column": 30
+                    "column": 27
                   },
                   "end": {
                     "line": 7,
-                    "column": 57
+                    "column": 43
                   }
                 },
                 "callee": {
-                  "type": "MemberExpression",
-                  "start": 169,
-                  "end": 187,
+                  "type": "Identifier",
+                  "start": 160,
+                  "end": 163,
                   "loc": {
                     "start": {
                       "line": 7,
-                      "column": 30
+                      "column": 31
                     },
                     "end": {
                       "line": 7,
-                      "column": 48
-                    }
-                  },
-                  "object": {
-                    "type": "Identifier",
-                    "start": 169,
-                    "end": 175,
-                    "loc": {
-                      "start": {
-                        "line": 7,
-                        "column": 30
-                      },
-                      "end": {
-                        "line": 7,
-                        "column": 36
-                      },
-                      "identifierName": "Object"
+                      "column": 34
                     },
-                    "name": "Object"
+                    "identifierName": "Map"
                   },
-                  "property": {
-                    "type": "Identifier",
-                    "start": 176,
-                    "end": 187,
-                    "loc": {
-                      "start": {
-                        "line": 7,
-                        "column": 37
-                      },
-                      "end": {
-                        "line": 7,
-                        "column": 48
-                      },
-                      "identifierName": "fromEntries"
-                    },
-                    "name": "fromEntries"
-                  },
-                  "computed": false
+                  "name": "Map"
                 },
                 "arguments": [
                   {
                     "type": "Identifier",
-                    "start": 188,
-                    "end": 195,
+                    "start": 164,
+                    "end": 171,
                     "loc": {
                       "start": {
                         "line": 7,
-                        "column": 49
+                        "column": 35
                       },
                       "end": {
                         "line": 7,
-                        "column": 56
+                        "column": 42
                       },
                       "identifierName": "mapping"
                     },
@@ -207,8 +174,8 @@
       },
       {
         "type": "Identifier",
-        "start": 198,
-        "end": 222,
+        "start": 174,
+        "end": 195,
         "loc": {
           "start": {
             "line": 8,
@@ -216,13 +183,13 @@
           },
           "end": {
             "line": 8,
-            "column": 24
+            "column": 21
           }
         },
         "declaration": {
           "type": "Identifier",
-          "start": 213,
-          "end": 221,
+          "start": 189,
+          "end": 194,
           "loc": {
             "start": {
               "line": 8,
@@ -230,11 +197,11 @@
             },
             "end": {
               "line": 8,
-              "column": 23
+              "column": 20
             },
-            "identifierName": "toObject"
+            "identifierName": "toMap"
           },
-          "name": "toObject"
+          "name": "toMap"
         },
         "name": "_",
         "leadingComments": [],
@@ -242,8 +209,8 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 198,
-        "end": 222,
+        "start": 174,
+        "end": 195,
         "loc": {
           "start": {
             "line": 8,
@@ -251,13 +218,13 @@
           },
           "end": {
             "line": 8,
-            "column": 24
+            "column": 21
           }
         },
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 139,
-          "end": 197,
+          "start": 129,
+          "end": 173,
           "loc": {
             "start": {
               "line": 7,
@@ -265,14 +232,14 @@
             },
             "end": {
               "line": 7,
-              "column": 58
+              "column": 44
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 145,
-              "end": 196,
+              "start": 135,
+              "end": 172,
               "loc": {
                 "start": {
                   "line": 7,
@@ -280,13 +247,13 @@
                 },
                 "end": {
                   "line": 7,
-                  "column": 57
+                  "column": 43
                 }
               },
               "id": {
                 "type": "Identifier",
-                "start": 145,
-                "end": 153,
+                "start": 135,
+                "end": 140,
                 "loc": {
                   "start": {
                     "line": 7,
@@ -294,31 +261,31 @@
                   },
                   "end": {
                     "line": 7,
-                    "column": 14
+                    "column": 11
                   },
-                  "identifierName": "toObject"
+                  "identifierName": "toMap"
                 },
-                "name": "toObject",
+                "name": "toMap",
                 "leadingComments": null
               },
               "init": {
                 "type": "ArrowFunctionExpression",
-                "start": 156,
-                "end": 196,
+                "start": 143,
+                "end": 172,
                 "loc": {
                   "start": {
                     "line": 7,
-                    "column": 17
+                    "column": 14
                   },
                   "end": {
                     "line": 7,
-                    "column": 57
+                    "column": 43
                   }
                 },
                 "id": {
                   "type": "Identifier",
-                  "start": 145,
-                  "end": 153,
+                  "start": 135,
+                  "end": 140,
                   "loc": {
                     "start": {
                       "line": 7,
@@ -326,11 +293,11 @@
                     },
                     "end": {
                       "line": 7,
-                      "column": 14
+                      "column": 11
                     },
-                    "identifierName": "toObject"
+                    "identifierName": "toMap"
                   },
-                  "name": "toObject",
+                  "name": "toMap",
                   "leadingComments": null
                 },
                 "generator": false,
@@ -339,16 +306,16 @@
                 "params": [
                   {
                     "type": "Identifier",
-                    "start": 157,
-                    "end": 164,
+                    "start": 144,
+                    "end": 151,
                     "loc": {
                       "start": {
                         "line": 7,
-                        "column": 18
+                        "column": 15
                       },
                       "end": {
                         "line": 7,
-                        "column": 25
+                        "column": 22
                       },
                       "identifierName": "mapping"
                     },
@@ -356,82 +323,49 @@
                   }
                 ],
                 "body": {
-                  "type": "CallExpression",
-                  "start": 169,
-                  "end": 196,
+                  "type": "NewExpression",
+                  "start": 156,
+                  "end": 172,
                   "loc": {
                     "start": {
                       "line": 7,
-                      "column": 30
+                      "column": 27
                     },
                     "end": {
                       "line": 7,
-                      "column": 57
+                      "column": 43
                     }
                   },
                   "callee": {
-                    "type": "MemberExpression",
-                    "start": 169,
-                    "end": 187,
+                    "type": "Identifier",
+                    "start": 160,
+                    "end": 163,
                     "loc": {
                       "start": {
                         "line": 7,
-                        "column": 30
+                        "column": 31
                       },
                       "end": {
                         "line": 7,
-                        "column": 48
-                      }
-                    },
-                    "object": {
-                      "type": "Identifier",
-                      "start": 169,
-                      "end": 175,
-                      "loc": {
-                        "start": {
-                          "line": 7,
-                          "column": 30
-                        },
-                        "end": {
-                          "line": 7,
-                          "column": 36
-                        },
-                        "identifierName": "Object"
+                        "column": 34
                       },
-                      "name": "Object"
+                      "identifierName": "Map"
                     },
-                    "property": {
-                      "type": "Identifier",
-                      "start": 176,
-                      "end": 187,
-                      "loc": {
-                        "start": {
-                          "line": 7,
-                          "column": 37
-                        },
-                        "end": {
-                          "line": 7,
-                          "column": 48
-                        },
-                        "identifierName": "fromEntries"
-                      },
-                      "name": "fromEntries"
-                    },
-                    "computed": false
+                    "name": "Map"
                   },
                   "arguments": [
                     {
                       "type": "Identifier",
-                      "start": 188,
-                      "end": 195,
+                      "start": 164,
+                      "end": 171,
                       "loc": {
                         "start": {
                           "line": 7,
-                          "column": 49
+                          "column": 35
                         },
                         "end": {
                           "line": 7,
-                          "column": 56
+                          "column": 42
                         },
                         "identifierName": "mapping"
                       },
@@ -447,9 +381,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * Instantiate an object from a mapping.\n *\n * @param {Iterable} mapping The input mapping.\n * @return {Object} The output object.\n ",
+              "value": "*\n * Instantiate a map from a mapping.\n *\n * @param {Iterable} mapping The input mapping.\n * @return {Map} The output map.\n ",
               "start": 0,
-              "end": 138,
+              "end": 128,
               "loc": {
                 "start": {
                   "line": 1,
@@ -471,9 +405,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * Instantiate an object from a mapping.\n *\n * @param {Iterable} mapping The input mapping.\n * @return {Object} The output object.\n ",
+      "value": "*\n * Instantiate a map from a mapping.\n *\n * @param {Iterable} mapping The input mapping.\n * @return {Map} The output map.\n ",
       "start": 0,
-      "end": 138,
+      "end": 128,
       "loc": {
         "start": {
           "line": 1,
@@ -489,9 +423,9 @@
   "tokens": [
     {
       "type": "CommentBlock",
-      "value": "*\n * Instantiate an object from a mapping.\n *\n * @param {Iterable} mapping The input mapping.\n * @return {Object} The output object.\n ",
+      "value": "*\n * Instantiate a map from a mapping.\n *\n * @param {Iterable} mapping The input mapping.\n * @return {Map} The output map.\n ",
       "start": 0,
-      "end": 138,
+      "end": 128,
       "loc": {
         "start": {
           "line": 1,
@@ -518,8 +452,8 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 139,
-      "end": 144,
+      "start": 129,
+      "end": 134,
       "loc": {
         "start": {
           "line": 7,
@@ -543,9 +477,9 @@
         "postfix": false,
         "binop": null
       },
-      "value": "toObject",
-      "start": 145,
-      "end": 153,
+      "value": "toMap",
+      "start": 135,
+      "end": 140,
       "loc": {
         "start": {
           "line": 7,
@@ -553,7 +487,7 @@
         },
         "end": {
           "line": 7,
-          "column": 14
+          "column": 11
         }
       }
     },
@@ -571,16 +505,16 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 154,
-      "end": 155,
+      "start": 141,
+      "end": 142,
       "loc": {
         "start": {
           "line": 7,
-          "column": 15
+          "column": 12
         },
         "end": {
           "line": 7,
-          "column": 16
+          "column": 13
         }
       }
     },
@@ -596,16 +530,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 156,
-      "end": 157,
+      "start": 143,
+      "end": 144,
       "loc": {
         "start": {
           "line": 7,
-          "column": 17
+          "column": 14
         },
         "end": {
           "line": 7,
-          "column": 18
+          "column": 15
         }
       }
     },
@@ -622,16 +556,16 @@
         "binop": null
       },
       "value": "mapping",
-      "start": 157,
-      "end": 164,
+      "start": 144,
+      "end": 151,
       "loc": {
         "start": {
           "line": 7,
-          "column": 18
+          "column": 15
         },
         "end": {
           "line": 7,
-          "column": 25
+          "column": 22
         }
       }
     },
@@ -647,16 +581,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 164,
-      "end": 165,
+      "start": 151,
+      "end": 152,
       "loc": {
         "start": {
           "line": 7,
-          "column": 25
+          "column": 22
         },
         "end": {
           "line": 7,
-          "column": 26
+          "column": 23
         }
       }
     },
@@ -673,50 +607,25 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 166,
-      "end": 168,
+      "start": 153,
+      "end": 155,
       "loc": {
         "start": {
           "line": 7,
-          "column": 27
+          "column": 24
         },
         "end": {
           "line": 7,
-          "column": 29
+          "column": 26
         }
       }
     },
     {
       "type": {
-        "label": "name",
-        "beforeExpr": false,
+        "label": "new",
+        "keyword": "new",
+        "beforeExpr": true,
         "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "Object",
-      "start": 169,
-      "end": 175,
-      "loc": {
-        "start": {
-          "line": 7,
-          "column": 30
-        },
-        "end": {
-          "line": 7,
-          "column": 36
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ".",
-        "beforeExpr": false,
-        "startsExpr": false,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -725,16 +634,17 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 175,
-      "end": 176,
+      "value": "new",
+      "start": 156,
+      "end": 159,
       "loc": {
         "start": {
           "line": 7,
-          "column": 36
+          "column": 27
         },
         "end": {
           "line": 7,
-          "column": 37
+          "column": 30
         }
       }
     },
@@ -750,17 +660,17 @@
         "postfix": false,
         "binop": null
       },
-      "value": "fromEntries",
-      "start": 176,
-      "end": 187,
+      "value": "Map",
+      "start": 160,
+      "end": 163,
       "loc": {
         "start": {
           "line": 7,
-          "column": 37
+          "column": 31
         },
         "end": {
           "line": 7,
-          "column": 48
+          "column": 34
         }
       }
     },
@@ -776,16 +686,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 187,
-      "end": 188,
+      "start": 163,
+      "end": 164,
       "loc": {
         "start": {
           "line": 7,
-          "column": 48
+          "column": 34
         },
         "end": {
           "line": 7,
-          "column": 49
+          "column": 35
         }
       }
     },
@@ -802,16 +712,16 @@
         "binop": null
       },
       "value": "mapping",
-      "start": 188,
-      "end": 195,
+      "start": 164,
+      "end": 171,
       "loc": {
         "start": {
           "line": 7,
-          "column": 49
+          "column": 35
         },
         "end": {
           "line": 7,
-          "column": 56
+          "column": 42
         }
       }
     },
@@ -827,16 +737,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 195,
-      "end": 196,
+      "start": 171,
+      "end": 172,
       "loc": {
         "start": {
           "line": 7,
-          "column": 56
+          "column": 42
         },
         "end": {
           "line": 7,
-          "column": 57
+          "column": 43
         }
       }
     },
@@ -853,16 +763,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 196,
-      "end": 197,
+      "start": 172,
+      "end": 173,
       "loc": {
         "start": {
           "line": 7,
-          "column": 57
+          "column": 43
         },
         "end": {
           "line": 7,
-          "column": 58
+          "column": 44
         }
       }
     },
@@ -881,8 +791,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 198,
-      "end": 204,
+      "start": 174,
+      "end": 180,
       "loc": {
         "start": {
           "line": 8,
@@ -909,8 +819,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 205,
-      "end": 212,
+      "start": 181,
+      "end": 188,
       "loc": {
         "start": {
           "line": 8,
@@ -934,9 +844,9 @@
         "postfix": false,
         "binop": null
       },
-      "value": "toObject",
-      "start": 213,
-      "end": 221,
+      "value": "toMap",
+      "start": 189,
+      "end": 194,
       "loc": {
         "start": {
           "line": 8,
@@ -944,7 +854,7 @@
         },
         "end": {
           "line": 8,
-          "column": 23
+          "column": 20
         }
       }
     },
@@ -961,16 +871,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 221,
-      "end": 222,
+      "start": 194,
+      "end": 195,
       "loc": {
         "start": {
           "line": 8,
-          "column": 23
+          "column": 20
         },
         "end": {
           "line": 8,
-          "column": 24
+          "column": 21
         }
       }
     },
@@ -987,8 +897,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 223,
-      "end": 223,
+      "start": 196,
+      "end": 196,
       "loc": {
         "start": {
           "line": 9,
