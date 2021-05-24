@@ -9,9 +9,9 @@ Parent is [js-library](https://github.com/make-github-pseudonymous-again/js-libr
 import {constant} from '@iterable-iterator/mapping' ;
 constant('ab', 1); // ['a', 1] ['b', 1]
 
-import {reflect} from '@iterable-iterator/mapping' ;
+import {inverse} from '@iterable-iterator/mapping' ;
 import {enumerate} from '@iterable-iterator/zip';
-reflect(enumerate('ab')); // ['a', 0] ['b', 1]
+inverse(enumerate('ab')); // ['a', 0] ['b', 1]
 
 // You can convert to and from Object and Map
 import {toObject, fromObject, toMap, fromMap} from '@iterable-iterator/mapping' ;

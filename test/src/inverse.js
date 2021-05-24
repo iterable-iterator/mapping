@@ -2,13 +2,13 @@ import test from 'ava';
 
 import {enumerate} from '@iterable-iterator/zip';
 
-import {reflect} from '../../src/index.js';
+import {inverse} from '../../src/index.js';
 
-test('reflect', (t) => {
-	t.deepEqual([...reflect(enumerate(''))], []);
+test('inverse', (t) => {
+	t.deepEqual([...inverse(enumerate(''))], []);
 
 	t.deepEqual(
-		[...reflect(enumerate('abcde'))],
+		[...inverse(enumerate('abcde'))],
 		[
 			['a', 0],
 			['b', 1],
