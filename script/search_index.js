@@ -1,20 +1,20 @@
 window.esdocSearchIndex = [
   [
-    "@aureooms/js-mapping/src/fromkeys.js~fromkeys",
+    "@iterable-iterator/mapping/src/fromkeys.js~fromkeys",
     "function/index.html#static-function-fromKeys",
-    "<span>fromKeys</span> <span class=\"search-result-import-path\">@aureooms/js-mapping/src/fromKeys.js</span>",
+    "<span>fromKeys</span> <span class=\"search-result-import-path\">@iterable-iterator/mapping/src/fromKeys.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-mapping/src/reflect.js~reflect",
+    "@iterable-iterator/mapping/src/reflect.js~reflect",
     "function/index.html#static-function-reflect",
-    "<span>reflect</span> <span class=\"search-result-import-path\">@aureooms/js-mapping/src/reflect.js</span>",
+    "<span>reflect</span> <span class=\"search-result-import-path\">@iterable-iterator/mapping/src/reflect.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-mapping/src/toobject.js~toobject",
+    "@iterable-iterator/mapping/src/toobject.js~toobject",
     "function/index.html#static-function-toObject",
-    "<span>toObject</span> <span class=\"search-result-import-path\">@aureooms/js-mapping/src/toObject.js</span>",
+    "<span>toObject</span> <span class=\"search-result-import-path\">@iterable-iterator/mapping/src/toObject.js</span>",
     "function"
   ],
   [
