@@ -3,14 +3,14 @@
 The code needs a ES2015+ polyfill to work, for example
 [regenerator-runtime/runtime](https://babeljs.io/docs/usage/polyfill).
 ```js
-require( 'regenerator-runtime/runtime' ) ;
+await import( 'regenerator-runtime/runtime.js' ) ;
 // or
 import 'regenerator-runtime/runtime.js' ;
 ```
 
 Then
 ```js
-const mapping = require( '@iterable-iterator/mapping' ) ;
+const mapping = await import( '@iterable-iterator/mapping' ) ;
 // or
 import * as mapping from '@iterable-iterator/mapping' ;
 ```
