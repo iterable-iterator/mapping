@@ -1,9 +1,8 @@
 import test from 'ava';
 
 import {enumerate} from '@iterable-iterator/zip';
-import {fromMap} from '../../src/index.js';
-
 import {repr} from './_fixtures.js';
+import {fromMap} from '#module';
 
 const macro = (t, mapping) => {
 	t.deepEqual(Array.from(fromMap(new Map(mapping))), Array.from(mapping));

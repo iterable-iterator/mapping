@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import {constant} from '../../src/index.js';
+import {constant} from '#module';
 
 test('constant', (t) => {
 	t.deepEqual([...constant('', 1)], []);

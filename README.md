@@ -23,7 +23,7 @@ fromMap(Map) -> mapping
 
 [![License](https://img.shields.io/github/license/iterable-iterator/mapping.svg)](https://raw.githubusercontent.com/iterable-iterator/mapping/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@iterable-iterator/mapping.svg)](https://www.npmjs.org/package/@iterable-iterator/mapping)
-[![Tests](https://img.shields.io/github/workflow/status/iterable-iterator/mapping/ci:cover?event=push&label=tests)](https://github.com/iterable-iterator/mapping/actions/workflows/ci:cover.yml?query=branch:main)
+[![Tests](https://img.shields.io/github/workflow/status/iterable-iterator/mapping/ci?event=push&label=tests)](https://github.com/iterable-iterator/mapping/actions/workflows/ci.yml?query=branch:main)
 [![Dependencies](https://img.shields.io/librariesio/github/iterable-iterator/mapping.svg)](https://github.com/iterable-iterator/mapping/network/dependencies)
 [![GitHub issues](https://img.shields.io/github/issues/iterable-iterator/mapping.svg)](https://github.com/iterable-iterator/mapping/issues)
 [![Downloads](https://img.shields.io/npm/dm/@iterable-iterator/mapping.svg)](https://www.npmjs.org/package/@iterable-iterator/mapping)

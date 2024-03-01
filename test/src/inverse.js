@@ -2,7 +2,7 @@ import test from 'ava';
 
 import {enumerate} from '@iterable-iterator/zip';
 
-import {inverse} from '../../src/index.js';
+import {inverse} from '#module';
 
 test('inverse', (t) => {
 	t.deepEqual([...inverse(enumerate(''))], []);

@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import {toObject} from '../../src/index.js';
+import {toObject} from '#module';
 
 test('toObject', (t) => {
 	t.deepEqual(toObject([]), {});
